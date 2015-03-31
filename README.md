@@ -1,3 +1,37 @@
+# Logstash TCP stream for Bunyan-Hub
+ 
+[![build status](https://secure.travis-ci.org/undoZen/bunyan-hub-logstash-tcp.png)](http://travis-ci.org/undoZen/bunyan-hub-logstash-tcp)
+
+This is a fork of chris-rock/bunyan-logstash-tcp to use with [bunyan-hub](https://undozen.github.io/bunyan-hub). It re
+
+## install
+
+```bash
+npm i --save bunyan-hub-logstash-tcp
+```
+
+## usage
+
+Use with bunyan-sub-stream:
+
+```javascript
+var SubStream = require('bunyan-sub-stream');
+var subStream = new SubStream({
+    level: 'debug',
+    raw: true
+});
+var bunyantcp = require('bunyan-hub-logstash-tcp');
+var pubStream = bunyantcp.createStream({
+    host: '127.0.0.1',
+    port: 9998
+});
+subStream.pipe(pubStream);
+```
+
+and you've done forwarding all events to logstash up from debug level.
+
+original readme from bunyan-logstash-tcp below.
+
 # Logstash TCP stream for Bunyan
 
 [![build status](https://secure.travis-ci.org/chris-rock/bunyan-logstash-tcp.png)](http://travis-ci.org/chris-rock/bunyan-logstash-tcp)
