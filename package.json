@@ -1,11 +1,13 @@
 {
   "name": "bunyan-hub-logstash-tcp",
   "description": "Logstash TCP plugin for Bunyan",
-  "version": "1.3.1",
+  "version": "1.3.2",
   "repository": "https://github.com/undoZen/bunyan-hub-logstash-tcp.git",
   "homepage": "https://github.com/undoZen/bunyan-hub-logstash-tcp",
   "main": "lib/logstash.js",
-  "files": ["lib/logstash.js"],
+  "files": [
+    "lib/logstash.js"
+  ],
   "author": "undoZen",
   "license": "MIT",
   "keywords": [
