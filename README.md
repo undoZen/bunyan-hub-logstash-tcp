@@ -32,6 +32,18 @@ and you've done forwarding all events to logstash up from debug level.
 
 original readme from bunyan-logstash-tcp below.
 
+## logstash config
+
+logstash input config format should be json
+```code
+input {
+  tcp {
+    port => "9998"
+    format => "json"
+  }
+}
+```
+
 # Logstash TCP stream for Bunyan
 
 [![build status](https://secure.travis-ci.org/chris-rock/bunyan-logstash-tcp.png)](http://travis-ci.org/chris-rock/bunyan-logstash-tcp)
