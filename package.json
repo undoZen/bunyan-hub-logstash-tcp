@@ -5,6 +5,7 @@
   "repository": "https://github.com/undoZen/bunyan-hub-logstash-tcp.git",
   "homepage": "https://github.com/undoZen/bunyan-hub-logstash-tcp",
   "main": "lib/logstash.js",
+  "files": ["lib/logstash.js"],
   "author": "undoZen",
   "license": "MIT",
   "keywords": [
